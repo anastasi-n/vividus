@@ -8,6 +8,7 @@ dependencies {
     api(group: 'com.fasterxml.jackson.core', name: 'jackson-core')
     api(group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.1')
     api(group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8')
+    api(group: 'org.jsoup', name: 'jsoup', version: versions.jsoup)
 
     implementation(group: 'org.apache.commons', name: 'commons-lang3', version: versions.commonsLang3)
     implementation(group: 'commons-io', name: 'commons-io', version: versions.commonsIo)

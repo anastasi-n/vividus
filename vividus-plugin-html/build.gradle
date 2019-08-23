@@ -4,7 +4,7 @@ ext.sonarProjectName = 'Vividus Plugin - HTML'
 dependencies {
     implementation project(':vividus-bdd-engine')
     implementation project(':vividus-soft-assert')
-    implementation(group: 'org.jsoup', name: 'jsoup', version: '1.12.1')
+    implementation project(':vividus-util')
     implementation(group: 'javax.inject', name: 'javax.inject', version: versions.javaxInject)
 
     testImplementation project(':vividus-util')

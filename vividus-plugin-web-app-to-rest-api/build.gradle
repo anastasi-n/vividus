@@ -2,13 +2,16 @@ project.description = 'Vividus plugin for Web App and Rest API plugins integrati
 ext.sonarProjectName = 'Vividus Plugin - Web App to API'
 
 dependencies {
+    implementation project(':vividus-http-client')
     implementation project(':vividus-plugin-web-app')
     implementation project(':vividus-plugin-rest-api')
-    implementation project(':vividus-http-client')
+    implementation project(':vividus-reporter')
+    implementation project(':vividus-soft-assert')
     implementation project(':vividus-util')
 
     implementation(group: 'org.slf4j', name: 'slf4j-api', version: versions.slf4j)
     implementation(group: 'javax.inject', name: 'javax.inject', version: versions.javaxInject)
+    implementation(group: 'org.jsoup', name: 'jsoup', version: versions.jsoup)
 
     testImplementation platform(group: 'org.junit', name: 'junit-bom', version: versions.junit)
     testImplementation(group: 'org.junit.jupiter', name: 'junit-jupiter')
